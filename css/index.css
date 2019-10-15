@@ -8,6 +8,16 @@ body {
   /* For browsers that do not support gradients */
 }
 
+/*background image in the title*/
+.fixed-bg {
+  background-image: url("../images/pole.jpg");
+  min-height: 350px;
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Style the header */
 header {
   background-color: rgb(36, 36, 36);
@@ -16,16 +26,25 @@ header {
 }
 
 titlebar {
-  padding: 20px;
   text-align: center;
   font-size: 50px;
 }
 
 article {
   float: left;
-  padding: 20px;
+  text-align: center;
+  padding: 40px;
   width: 100%;
   background-color: #f1f1f1;
+  height: 300px;
+  /* only for demonstration, should be removed */
+}
+
+footbar {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(36, 36, 36);
   height: 300px;
   /* only for demonstration, should be removed */
 }
