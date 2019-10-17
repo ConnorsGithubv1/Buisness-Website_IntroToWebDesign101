@@ -1,0 +1,21 @@
+body{
+    background-color: #777;
+    color: black
+}
+
+titlebarfaq{
+    float: left;
+  text-align: center;
+  padding: 40px;
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+  height: 350px;
+  color: white;
+}
+
+QandA{
+    background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
