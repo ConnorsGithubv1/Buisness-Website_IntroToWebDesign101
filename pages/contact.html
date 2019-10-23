@@ -12,6 +12,20 @@
   <link rel="stylesheet" type="text/css" href="../css/index.css">
   <link rel="stylesheet" type="text/css" href="../css/contact.css">
   <script src="../js/index.js"></script>
+  <script>
+  function initMap() {
+    // The location of Uluru
+    var uluru = {lat: -25.344, lng: 131.036};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
+  }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuutC5G2vGfS1_i4Syw2kPAO2j4qpwF9I&callback=initMap">
+    </script>
   <title>Tom's Tackle</title>
 </head>
 
@@ -37,7 +51,7 @@
 
   <article>
     <h1>Nearest shopping mall</h1>
-    
+    <div id="map"></div>
   </article>
   <footbar>
 
