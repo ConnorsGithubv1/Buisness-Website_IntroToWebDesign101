@@ -4,14 +4,23 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(42, 41, 62);
   /* For browsers that do not support gradients */
 }
 
 /*background image in the title*/
 .fixed-bg {
   background-image: url("../images/pole.jpg");
-  min-height: 350px;
+  min-height: 750px;
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg2 {
+  background-image: url("../images/fishing2.jpg");
+  min-height: 750px;
   background-attachment: fixed;
   background-position:center;
   background-repeat: no-repeat;
@@ -20,9 +29,15 @@ body {
 
 /* Style the header */
 header {
-  background-color: rgb(36, 36, 36);
-  font-size: 35px;
-  color: white;
+  background-color: rgb(42, 41, 62);
+  font-size: 100px;
+  color: rgb(243, 224, 190);
+  height: 210px;
+}
+
+#mainTitle{
+  padding: 16px;
+  margin: auto;
 }
 
 table {
@@ -30,10 +45,21 @@ table {
   color: #f1f1f1;
 }
 
+picture {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(243, 224, 190);
+  height: 600px;
+}
 
 titlebar {
   text-align: center;
   font-size: 50px;
+  color: rgb(243, 224, 190);
+}
+
+h2{
+  color: rgb(243, 224, 190);
 }
 
 article {
@@ -41,9 +67,10 @@ article {
   text-align: center;
   padding: 40px;
   width: 100%;
-  background-color: #f1f1f1;
-  height: 300px;
-  /* only for demonstration, should be removed */
+  background-color: rgb(159, 156, 153);
+  height: 600px;
+  font-size: large;
+  
 }
 
 footbar {
@@ -51,18 +78,20 @@ footbar {
   text-align: center;
   padding: 20px;
   width: 100%;
-  background-color: rgb(36, 36, 36);
-  height: 300px;
+  background-color: rgb(121, 123, 58);
+  height: 600px;
+  color: rgb(159, 156, 153);
   /* only for demonstration, should be removed */
 }
 
 
 /* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
+#footerInfo {
+  background-color: #111;
+  padding: 30px;
   text-align: center;
-  color: white;
+  color: rgb(42, 41, 62);
+  font-size: x-large;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -113,7 +142,7 @@ footer {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: rgb(42, 41, 62);
   color: white;
   padding: 10px 15px;
   border: none;
@@ -125,7 +154,7 @@ footer {
 
 #main {
   transition: margin-left .5s;
-  padding: 16px;
+  padding: 10px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
