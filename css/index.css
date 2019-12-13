@@ -30,7 +30,7 @@ body {
 /* Style the header */
 header {
   background-color: rgb(42, 41, 62);
-  font-size: 100px;
+  font-size: 120px;
   color: rgb(243, 224, 190);
   height: 210px;
 }
@@ -63,9 +63,6 @@ h2{
 }
 
 article {
-  float: right;
-  text-align: center;
-  padding: 40px;
   width: 100%;
   background-color: rgb(159, 156, 153);
   height: 600px;
