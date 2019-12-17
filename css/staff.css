@@ -3,3 +3,13 @@
 body{
     background-color: rgb(243, 224, 190);
 }
+
+[data-component="slideshow"] .slide {
+    display: none;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    display: block;
+  }
+
+  .initiallyHidden { display: none; }

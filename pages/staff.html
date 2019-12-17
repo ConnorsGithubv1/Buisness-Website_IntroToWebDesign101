@@ -9,12 +9,21 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
   <link rel="stylesheet" type="text/css" href="../css/index.css">
   <link rel="stylesheet" type="text/css" href="../css/staff.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="../js/index.js"></script>
+  
   <script src="../js/staff.js"></script>
+  <script src="../js/index.js"></script>
+  
   <title>Tom's Tackle</title>
+
+  <script>
+    function myFunction() {
+  $(".initiallyHidden").toggle();
+}
+  </script>
 </head>
 
 <body>
@@ -49,13 +58,32 @@
   <div class="jumbotron">
     <h1 class="display-4">Staff Slideshow</h1>
     <p class="lead">To show appreciation for our workers we created a slideshow to thank them for their work.</p>
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Click me</a>
-  </p>
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button" id="show" onclick="myFunction()">Click me</a>
+    </p>
+    <div id="slideshow-example" data-component="slideshow" class="initiallyHidden">
+      <div role="list">
+        <div class="slide">
+          <img src="../images/BrianCollins.jpeg" alt="brian">
+        </div>
+        <div class="slide">
+          <img src="../images/fishing1.jpg" alt="art2">
+        </div>
+        <div class="slide">
+          <img src="../images/fishing2.jpg" alt="art3">
+        </div>
+        <div class="slide">
+          <img src="../images/frontshop.jpg" alt="art4">
+        </div>
+      </div>
+    </div>
+    <script src="../js/staff.js"></script>
   </div>
 
-    <!-- 
+</div>
+
+  <!-- 
     <div class="w3-content" style="max-width:800px">
     <img class="mySlides" src="../images/BrianCollins.jpeg" style="width:100%">
     <img class="mySlides" src="../images/BrianCollins.jpeg" style="width:100%">
@@ -72,12 +100,12 @@
     <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
   </div>
 -->
-<!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt-4">
+  <!-- Footer -->
+  <footer class="page-footer font-small special-color-dark pt-4">
 
     <!-- Footer Elements -->
     <div class="container">
-  
+
       <!-- Social buttons -->
       <ul class="list-unstyled list-inline text-center">
         <li class="list-inline-item">
@@ -107,18 +135,22 @@
         </li>
       </ul>
       <!-- Social buttons -->
-  
+
     </div>
     <!-- Footer Elements -->
-  
+
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
       <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
     </div>
     <!-- Copyright -->
-  
+
   </footer>
   <!-- Footer -->
 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -19,12 +19,13 @@ body {
 }
 
 .fixed-bg2 {
-  background-image: url("../images/fishing2.jpg");
-  min-height: 750px;
-  background-attachment: fixed;
-  background-position:center;
+  background-image: url("../images/background.jpg");
+  min-height: 1400px;
+  background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  bottom: 0;
+  right: 0;
 }
 
 /* Style the header */
