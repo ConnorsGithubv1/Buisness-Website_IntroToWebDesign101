@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="../css/index.css">
   <link rel="stylesheet" type="text/css" href="../css/faq.css">
   <script src="../js/index.js"></script>
+  <script src="../js/faq.js"></script>
+
   <title>Tom's Tackle</title>
 </head>
 
@@ -43,12 +45,16 @@
     </div>
   </header>
 
-  <div class="faqbody">
+
+  <div class="faqbody">        
     <br>
     <br>
-    <h1>Frequently Asked Questions</h1>
-    <hr>
-    <br>
+    <h1 id="faqtitle">Frequently Asked Questions</h1>
+    <div class="head">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        
+    
     <p>1. what is fish?</p>
     <p> A:catch or try to catch fish, typically by using a net or hook and line.</p>
 
@@ -64,6 +70,66 @@
     <p>5. how much is this website worth?</p>
     <p> A: 2.6 billion</p>
   </div>
+
+</div>  
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus-g"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-dribbble"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
 
 </body>
 

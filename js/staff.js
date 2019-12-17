@@ -1,4 +1,4 @@
-var slideIndex = 1;
+/*var slideIndex = 2;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -24,3 +24,4 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-red";
 }
+*/

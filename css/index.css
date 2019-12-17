@@ -81,6 +81,10 @@ footbar {
   /* only for demonstration, should be removed */
 }
 
+footer{
+  background-color: rgb(42, 41, 62);
+  color: rgb(243, 224, 190);
+}
 
 /* Style the footer */
 #footerInfo {
