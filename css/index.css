@@ -18,6 +18,14 @@ body {
   background-size: cover;
 }
 
+#secondphoto{
+  background-image: url("../images/fishing1.jpg");
+  bottom: 0;
+  right: 0;
+  min-height: 450px;
+  text-align: center;
+  color: rgb(243, 224, 190);
+}
 .fixed-bg2 {
   background-image: url("../images/background.jpg");
   min-height: 1400px;
