@@ -1,15 +1,5 @@
 .mySlides {display:none}
 
 body{
-    background-color: rgb(243, 224, 190);
+    background-color: ;
 }
-
-[data-component="slideshow"] .slide {
-    display: none;
-  }
-
-  [data-component="slideshow"] .slide.active {
-    display: block;
-  }
-
-  .initiallyHidden { display: none; }

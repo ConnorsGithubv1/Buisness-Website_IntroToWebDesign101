@@ -4,7 +4,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(42, 41, 62);
+  background-color: #292b2c;
   /* For browsers that do not support gradients */
 }
 
@@ -13,160 +13,34 @@ body {
   background-image: url("../images/pole.jpg");
   min-height: 750px;
   background-attachment: fixed;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#secondphoto{
-  background-image: url("../images/fishing1.jpg");
-  bottom: 0;
-  right: 0;
-  min-height: 450px;
-  text-align: center;
-  color: rgb(243, 224, 190);
-}
-.fixed-bg2 {
-  background-image: url("../images/background.jpg");
-  min-height: 1400px;
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  bottom: 0;
-  right: 0;
-}
-
-/* Style the header */
-header {
-  background-color: rgb(42, 41, 62);
-  font-size: 120px;
-  color: rgb(243, 224, 190);
-  height: 210px;
-}
-
-#mainTitle{
-  padding: 16px;
-  margin: auto;
-}
-
-table {
-  width: 100%;
-  color: #f1f1f1;
-}
-
-picture {
-  text-align: center;
-  font-size: 50px;
-  color: rgb(243, 224, 190);
-  height: 600px;
-}
-
-titlebar {
-  text-align: center;
-  font-size: 50px;
-  color: rgb(243, 224, 190);
-}
-
-h2{
-  color: rgb(243, 224, 190);
-}
+h2 {}
 
 article {
   width: 100%;
-  background-color: rgb(159, 156, 153);
-  height: 600px;
-  font-size: large;
-  
+  background-color: #292b2c;
+  min-height: 600px;
+  font-size: xx-large;
+
 }
 
-footbar {
-  float: right;
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-  background-color: rgb(121, 123, 58);
-  height: 600px;
-  color: rgb(159, 156, 153);
-  /* only for demonstration, should be removed */
+[data-component="slideshow"] .slide {
+  display: none;
 }
+
+[data-component="slideshow"] .slide.active {
+  display: block;
+}
+
 
 footer{
-  background-color: rgb(42, 41, 62);
-  color: rgb(243, 224, 190);
-}
-
-/* Style the footer */
-#footerInfo {
-  background-color: #111;
-  padding: 30px;
+  min-height: 150px;
   text-align: center;
-  color: rgb(42, 41, 62);
-  font-size: x-large;
 }
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-
-  nav,
-  article {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* side bar */
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: rgb(42, 41, 62);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 10px;
-}
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {
@@ -175,5 +49,30 @@ footer{
 
   .sidebar a {
     font-size: 18px;
+  }
+}
+
+.navbar {
+  min-height: 110px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
   }
 }

@@ -13,10 +13,6 @@ titlebarfaq {
   color: white;
 }
 
-#faqtitle{
-  color: rgb(121, 123, 58);
-}
-
 
 .QAphoto {
   background-image: url("../images/fishing.jpg");
@@ -26,46 +22,10 @@ titlebarfaq {
   background-size: fill;
 }
 
-.change{
-  background-color: rgb(236, 51, 27);
-  width: 100%;
-  text-align: center;
-  height: 700px;
-}
-
 .faqbody{
   background-color: rgb(243, 224, 190);
   width: 100%;
   text-align: center;
-  height: 750px;
+  height: 700px;
 
-}
-
-.head {
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #f1f1f1;
-}
-
-.header h2 {
-  text-align: center;
-}
-
-.progress-container {
-  width: 100%;
-  height: auto;
-  background: rgb(243, 224, 190);
-}
-
-.progress-bar {
-  height: 10px;
-  background: rgb(121, 123, 58);
-  width: 0%;
-}
-
-.content {
-  padding: 100px 0;
-  margin: 50px auto 0 auto;
-  width: 80%;
 }
