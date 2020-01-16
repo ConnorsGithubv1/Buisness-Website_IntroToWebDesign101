@@ -13,6 +13,15 @@ titlebarfaq {
   color: white;
 }
 
+.fixed-bg3{
+  background-image: url("../images/water.jpg");
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .QAphoto {
   background-image: url("../images/fishing.jpg");
