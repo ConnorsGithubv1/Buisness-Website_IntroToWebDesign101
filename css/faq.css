@@ -38,3 +38,12 @@ titlebarfaq {
   height: 700px;
 
 }
+
+.fixed-bg2{
+  background-color: ivory;;
+  min-height: 50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
